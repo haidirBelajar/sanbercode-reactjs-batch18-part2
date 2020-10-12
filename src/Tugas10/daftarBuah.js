@@ -14,22 +14,28 @@ class Buah extends React.Component{
         
         return (
            <div className="container">
-               <div className="content noborder">
+               <div className="content noborder flex-wrap">
                    <h1 className="title">{this.props.title}</h1>
 
                    <div className="table-buah">
                    <table>
+                       <thead>
                        <tr>
                             <th>{this.props.th1}</th>
                             <th>{this.props.th2}</th>
                             <th>{this.props.th3}</th>
                        </tr>
+                       </thead>
+                       
                        {dataHargaBuah.map(x =>
-                            <tr>
-                                <td>{x.nama}</td>
-                                <td>{x.harga}</td>
-                                <td>{x.berat/1000 + " " + "kg"}</td>
-                            </tr>
+                       <tbody>
+                         <tr>
+                            <td>{x.nama}</td>
+                            <td>{x.harga}</td>
+                            <td>{x.berat/1000 + " " + "kg"}</td>
+                        </tr>
+                       </tbody>
+                           
                         )}
                        
                    </table>
