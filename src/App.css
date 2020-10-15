@@ -1,3 +1,11 @@
+body{
+  background-color: rgb(25,30,49);
+}
+
+bdark {
+  background-color: rgb(37,44,68);
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -131,14 +139,15 @@
 }
 
 .table-buah table th{
-  border: 1px solid black;
-  background-color: #AAAAAA;
+  border: 1px solid #eaeaea;
+  color: #fff;
 }
 
 .table-buah table td{
-  border: 1px solid black;
+  border: 1px solid #eaeaea;
   text-align: left;
   padding: 8px;
+  color: #fff;
 }
 
 .noborder {
@@ -223,9 +232,13 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
-  background-color: #E6B01E;
+  background-color: #eaeaea ;
   padding: 10px;
   border-radius: 10px;
+}
+
+.input label{
+  color: #567698;
 }
 
 .submit{
@@ -235,6 +248,7 @@
 .submit input[type="submit" i] {
   border-radius: 5px;
   background-color: #3F0;
+  padding: 8px 12px;
   cursor: pointer;
 }
 

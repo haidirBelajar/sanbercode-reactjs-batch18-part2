@@ -5,7 +5,8 @@ import './App.css';
 // import Buah from './Tugas10/daftarBuah';
 // import Waktu from './Tugas11/tugas11'
 // import DaftarHarga from './Tugas12/tugas12'
-import FormBuah from './Tugas13/tugas13'
+// import DaftarBuah from './Tugas13/tugas13'
+import Buahbuahan from './Tugas14/BuahBuahan'
 
 function App() {
  
@@ -15,7 +16,7 @@ function App() {
       <Form />
       {isShow && <Waktu />}
       <DaftarHarga title="Daftar Harga Buah" /> */}
-      <FormBuah />
+      <Buahbuahan />
     </div>
   );
 }
