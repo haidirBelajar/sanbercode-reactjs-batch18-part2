@@ -1,8 +1,167 @@
-body{
-  background-color: rgb(25,30,49);
+
+/* buat ganti teme */
+.light {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eaeaea;
 }
 
-bdark {
+.light .menus{
+  color: #567698;
+}
+
+.light h1{
+  color : #567698;
+}
+
+.light h2{
+  color : #567698;
+}
+
+.light .input-txt label {
+  color: #567698;
+}
+
+.light .ckbx label{
+  color: #567698;
+}
+
+.light .label-checkbox label{
+  color: #567698;
+}
+
+.light .content {
+  width: 50%;
+  border: 1px solid #567698;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+}
+
+.light .table-buah table th{
+  border: 1px solid #567698;
+  color: #567698;
+}
+
+.light .table-buah table td{
+  border: 1px solid #567698;
+  text-align: left;
+  padding: 8px;
+  color: #567698;
+}
+
+.light .input {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color:transparent ;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.light .input label{
+  color: #567698;
+}
+
+.dark {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(37,44,68);
+}
+
+.dark .menus{
+  color: #fff;
+}
+
+.dark h1{
+  color: #fff;
+}
+
+.dark h2{
+  color: #fff;
+}
+
+.dark .input-txt label {
+  color: #fff;
+}
+
+.dark .ckbx label{
+  color: #fff;
+}
+
+.dark .label-checkbox label{
+  color: #fff;
+}
+
+.dark .content {
+  width: 50%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+}
+
+.dark .table-buah table th{
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.dark .table-buah table td{
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 8px;
+  color: #fff;
+}
+
+.dark .input {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaeaea ;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dark .input label{
+  color: #567698;
+}
+
+/* end of ganti tema */
+header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  float: right;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+header ul li:first-child {
+  margin-left: 0;
+}
+
+header ul :last-child {
+  margin-right: 16px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+.bdark {
   background-color: rgb(37,44,68);
 }
 
@@ -57,7 +216,7 @@ bdark {
 }
 
 .container{
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,13 +224,7 @@ bdark {
   padding-top: 64px;
 }
 
-.content {
-  width: 100%;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding-bottom: 32px;
-  padding-left: 24px;
-}
+
 
 .form-beli {
   width: 50%;
@@ -136,18 +289,6 @@ bdark {
 .table-buah table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.table-buah table th{
-  border: 1px solid #eaeaea;
-  color: #fff;
-}
-
-.table-buah table td{
-  border: 1px solid #eaeaea;
-  text-align: left;
-  padding: 8px;
-  color: #fff;
 }
 
 .noborder {
@@ -227,20 +368,6 @@ bdark {
   align-items: center;
 }
 
-.input {
-  margin-top: 10px;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  background-color: #eaeaea ;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.input label{
-  color: #567698;
-}
-
 .submit{
   margin-top: 16px;
 }
@@ -286,3 +413,4 @@ bdark {
 .ptop {
   padding-top: 20px !important;
 }
+

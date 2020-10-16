@@ -26,7 +26,11 @@ const FormBUah = () => {
     const onSubmitBuah = (event) => {
         event.preventDefault()
 
-        Axios.post(`http://backendexample.sanbercloud.com/api/fruits`, {name: input.name, price: input.price, weight: input.weight})
+        Axios.post(`http://backendexample.sanbercloud.com/api/fruits`, 
+        {
+            name: input.name,
+            price: input.price, 
+            weight: input.weight})
         .then(res => {
             setDaftarBuah([
               ...daftarBuah, 
@@ -46,19 +50,22 @@ const FormBUah = () => {
                         <label style={{float: "left"}}>
                         Nama:
                         </label>
-                        <input style={{float: "right"}} type="text" required name="name" value={input.name} onChange={onIputChange}/>
+                        <input style={{float: "right"}} type="text" required name="name" 
+                        value={input.name} onChange={onIputChange}/>
                     </div>   
                     <div className="input">
                         <label style={{float: "left"}}>
                         Harga:
                         </label>
-                        <input style={{float: "right"}} type="text" required name="price" value={input.price} onChange={onIputChange}/>   
+                        <input style={{float: "right"}} type="text" required name="price" 
+                        value={input.price} onChange={onIputChange}/>   
                     </div>
                         <div className="input">
                         <label style={{float: "left"}}>
                         Berat (dalam gram):
                         </label>
-                        <input style={{float: "right"}} type="number" required name="weight" value={input.weight} onChange={onIputChange}/>  
+                        <input style={{float: "right"}} type="number" required name="weight" 
+                        value={input.weight} onChange={onIputChange}/>  
                     </div>
                     <div className="submit">
                         <input type="submit" value="Submit" /> 

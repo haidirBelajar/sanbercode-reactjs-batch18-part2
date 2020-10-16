@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import Form from './Tugas9/appform';
@@ -7,16 +7,22 @@ import './App.css';
 // import DaftarHarga from './Tugas12/tugas12'
 // import DaftarBuah from './Tugas13/tugas13'
 import Buahbuahan from './Tugas14/BuahBuahan'
+import { BrowserRouter } from 'react-router-dom'
+import HeaderNav from './Tugas15/header-nav'
+import RouterNav from './Tugas15/router'
+import {ThemeProvider, ThemeContext} from './Tugas15/theme-context'
+import Layout from './Tugas15/layout';
 
 function App() {
  
+
   return (
     <div className="App">
-      {/* <Buah title="Daftar Harga Buah" th1="Nama" th2="Harga" th3="Berat"/>
-      <Form />
-      {isShow && <Waktu />}
-      <DaftarHarga title="Daftar Harga Buah" /> */}
-      <Buahbuahan />
+      <BrowserRouter>      
+      <ThemeProvider>
+        <Layout />
+      </ThemeProvider>
+      </BrowserRouter>
     </div>
   );
 }

@@ -28,7 +28,7 @@ class Buah extends React.Component{
                        </thead>
                        
                        {dataHargaBuah.map(x =>
-                       <tbody>
+                       <tbody key={x.nama}>
                          <tr>
                             <td>{x.nama}</td>
                             <td>{x.harga}</td>

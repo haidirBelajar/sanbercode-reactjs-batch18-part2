@@ -112,8 +112,10 @@ const DaftarBuah = () => {
     }
   
     return(
-      <>
+      <div className="container ptop">
+        <div className="content noborder">
         <h1>Daftar Harga Buah</h1>
+        <div className="table-buah">
         <table>
           <thead>
             <tr>
@@ -145,37 +147,38 @@ const DaftarBuah = () => {
               }
           </tbody>
         </table>
+        </div>
         {/* Form */}
-        <h1>Form Daftar Harga Buah</h1>
-  
-        <div style={{width: "50%", margin: "0 auto", display: "block"}}>
-          <div style={{border: "1px solid #aaa", padding: "20px"}}>
-            <form onSubmit={handleSubmit}>
-              <label style={{float: "left"}}>
+        </div>
+        <div className="content noborder">
+            <form className="form-input" onSubmit={handleSubmit}>
+              <div className="input">
+              <label >
                 Nama:
               </label>
-              <input style={{float: "right"}} type="text" required name="name" value={input.name} onChange={handleChange}/>
-              <br/>
-              <br/>
-              <label style={{float: "left"}}>
+              <input type="text" required name="name" value={input.name} onChange={handleChange}/>
+
+              </div>
+              <div className="input">
+              <label >
                 Harga:
               </label>
-              <input style={{float: "right"}} type="text" required name="price" value={input.price} onChange={handleChange}/>
-              <br/>
-              <br/>
-              <label style={{float: "left"}}>
+              <input type="text" required name="price" value={input.price} onChange={handleChange}/>
+                
+              </div>
+              <div className="input">
+              <label >
                 Berat (dalam gram):
               </label>
-              <input style={{float: "right"}} type="number" required name="weight" value={input.weight} onChange={handleChange}/>
-              <br/>
-              <br/>
-              <div style={{width: "100%", paddingBottom: "20px"}}>
-                <button style={{ float: "right"}}>submit</button>
+              <input type="number" required name="weight" value={input.weight} onChange={handleChange}/>
+                
+              </div>
+              <div className="submit">
+              <input type="submit" value="Submit" />
               </div>
             </form>
           </div>
-        </div>
-      </>
+      </div>
     )
   }
   
